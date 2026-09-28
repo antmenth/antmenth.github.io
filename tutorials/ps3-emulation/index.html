@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="antmenth. PS3 Emulation Tutorial — setup, downloads and resources.">
+
+    <title>PS3 Emulation — antmenth.</title>
+
+    <link rel="stylesheet" href="../../style.css">
+</head>
+
+<body data-page="tutorial">
+
+
+    <!-- =====================================================
+         HEADER
+         ===================================================== -->
+
+    <header class="site-header">
+
+        <a class="brand"
+           href="../../"
+           aria-label="antmenth home">
+            <span class="brand-prompt">&gt;</span>
+            <span id="brandText"></span>
+        </a>
+
+        <div class="header-status">
+            <span class="status-dot"></span>
+            <span>online</span>
+        </div>
+
+    </header>
+
+
+    <!-- =====================================================
+         TUTORIAL
+         ===================================================== -->
+
+    <main class="site-container tutorial-page"
+          data-tutorial-page>
+
+        <a class="tutorial-back"
+           href="../../">
+            back to tutorials
+        </a>
+
+
+        <!-- TUTORIAL HEADER -->
+
+        <header class="tutorial-header">
+
+            <h1 id="tutorialTitle"
+                class="tutorial-title">
+                Loading...
+            </h1>
+
+            <p id="tutorialDescription"
+               class="tutorial-description">
+                Loading tutorial information...
+            </p>
+
+            <div class="tutorial-meta">
+
+                <span id="tutorialDate"
+                      class="tutorial-meta-date">
+                    loading...
+                </span>
+
+                <div id="tutorialTags"
+                     class="tutorial-tags"></div>
+
+            </div>
+
+        </header>
+
+
+        <!-- =================================================
+             CONTENT
+             ================================================= -->
+
+        <div class="tutorial-content">
+
+
+            <!-- ===============================================
+                 VIDEO
+                 =============================================== -->
+
+            <section class="tutorial-section">
+
+                <h2 class="tutorial-section-heading">
+                    video
+                </h2>
+
+                <div id="videoFrame"
+                     class="video-frame">
+                    <div class="video-placeholder">
+                        Tutorial in progress! Please check back soon.
+                    </div>
+                </div>
+
+            </section>
+
+
+            <!-- ===============================================
+                 RESOURCES
+                 =============================================== -->
+
+            <section class="tutorial-section">
+
+                <h2 class="tutorial-section-heading">
+                    resources
+                </h2>
+
+
+                <div class="resource-grid">
+
+
+                    <!-- RPCS3 -->
+
+                    <a class="resource-card"
+                       href="https://rpcs3.net/download"
+                       target="_blank"
+                       rel="noopener noreferrer">
+
+                        <h3 class="resource-name">
+                            RPCS3
+                        </h3>
+
+                        <p class="resource-description">
+                            Download the RPCS3 PlayStation 3 emulator.
+                        </p>
+
+                        <span class="resource-link">
+                            rpcs3.net/download →
+                        </span>
+
+                    </a>
+
+
+                    <!-- PS3 FIRMWARE -->
+
+                    <a class="resource-card"
+                       href="https://www.playstation.com/en-gb/support/hardware/ps3/system-software/"
+                       target="_blank"
+                       rel="noopener noreferrer">
+
+                        <h3 class="resource-name">
+                            Official PS3 firmware
+                        </h3>
+
+                        <p class="resource-description">
+                            Official PlayStation page for PS3 system software.
+                        </p>
+
+                        <span class="resource-link">
+                            playstation.com →
+                        </span>
+
+                    </a>
+
+
+                    <!-- NOPAYSTATION -->
+
+                    <a class="resource-card"
+                       href="https://nopaystation.com/"
+                       target="_blank"
+                       rel="noopener noreferrer">
+
+                        <h3 class="resource-name">
+                            NoPayStation
+                        </h3>
+
+                        <p class="resource-description">
+                            NoPayStation website used for the tutorial configuration.
+                        </p>
+
+                        <span class="resource-link">
+                            nopaystation.com →
+                        </span>
+
+                    </a>
+
+
+                    <!-- PKG2ZIP -->
+
+                    <a class="resource-card"
+                       href="https://github.com/mmozeiko/pkg2zip"
+                       target="_blank"
+                       rel="noopener noreferrer">
+
+                        <h3 class="resource-name">
+                            pkg2zip
+                        </h3>
+
+                        <p class="resource-description">
+                            pkg2zip project and documentation.
+                        </p>
+
+                        <span class="resource-link">
+                            github.com →
+                        </span>
+
+                    </a>
+
+
+                </div>
+
+            </section>
+
+
+            <!-- ===============================================
+                 NOPAYSTATION SETUP
+                 =============================================== -->
+
+            <section class="tutorial-section">
+
+                <h2 class="tutorial-section-heading">
+                    NoPayStation links setup
+                </h2>
+
+
+                <div class="setup-box">
+
+
+                    <!-- GAMES -->
+
+                    <div class="setup-group">
+
+                        <h3 class="setup-group-title">
+                            Games
+                        </h3>
+
+
+                        <div class="copy-row">
+
+                            <code id="psv-games"
+                                  class="copy-value">http://nopaystation.com/tsv/PSV_GAMES.tsv</code>
+
+                            <button class="copy-button"
+                                    type="button"
+                                    data-copy-target="psv-games">
+                                Copy
+                            </button>
+
+                        </div>
+
+
+                        <div class="copy-row">
+
+                            <code id="psm-games"
+                                  class="copy-value">http://nopaystation.com/tsv/PSM_GAMES.tsv</code>
+
+                            <button class="copy-button"
+                                    type="button"
+                                    data-copy-target="psm-games">
+                                Copy
+                            </button>
+
+                        </div>
+
+
+                        <div class="copy-row">
+
+                            <code id="psx-games"
+                                  class="copy-value">http://nopaystation.com/tsv/PSX_GAMES.tsv</code>
+
+                            <button class="copy-button"
+                                    type="button"
+                                    data-copy-target="psx-games">
+                                Copy
+                            </button>
+
+                        </div>
+
+
+                        <div class="copy-row">
+
+                            <code id="psp-games"
+                                  class="copy-value">http://nopaystation.com/tsv/PSP_GAMES.tsv</code>
+
+                            <button class="copy-button"
+                                    type="button"
+                                    data-copy-target="psp-games">
+                                Copy
+                            </button>
+
+                        </div>
+
+
+                        <div class="copy-row">
+
+                            <code id="ps3-games"
+                                  class="copy-value">http://nopaystation.com/tsv/PS3_GAMES.tsv</code>
+
+                            <button class="copy-button"
+                                    type="button"
+                                    data-copy-target="ps3-games">
+                                Copy
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- DLCS -->
+
+                    <div class="setup-group">
+
+                        <h3 class="setup-group-title">
+                            DLCs
+                        </h3>
+
+
+                        <div class="copy-row">
+
+                            <code id="psv-dlcs"
+                                  class="copy-value">http://nopaystation.com/tsv/PSV_DLCS.tsv</code>
+
+                            <button class="copy-button"
+                                    type="button"
+                                    data-copy-target="psv-dlcs">
+                                Copy
+                            </button>
+
+                        </div>
+
+
+                        <div class="copy-row">
+
+                            <code id="psp-dlcs"
+                                  class="copy-value">http://nopaystation.com/tsv/PSP_DLCS.tsv</code>
+
+                            <button class="copy-button"
+                                    type="button"
+                                    data-copy-target="psp-dlcs">
+                                Copy
+                            </button>
+
+                        </div>
+
+
+                        <div class="copy-row">
+
+                            <code id="ps3-dlcs"
+                                  class="copy-value">http://nopaystation.com/tsv/PS3_DLCS.tsv</code>
+
+                            <button class="copy-button"
+                                    type="button"
+                                    data-copy-target="ps3-dlcs">
+                                Copy
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- THEMES -->
+
+                    <div class="setup-group">
+
+                        <h3 class="setup-group-title">
+                            Themes
+                        </h3>
+
+
+                        <div class="copy-row">
+
+                            <code id="psv-themes"
+                                  class="copy-value">http://nopaystation.com/tsv/PSV_THEMES.tsv</code>
+
+                            <button class="copy-button"
+                                    type="button"
+                                    data-copy-target="psv-themes">
+                                Copy
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- HMAC -->
+
+                    <div class="setup-group">
+
+                        <h3 class="setup-group-title">
+                            HMAC
+                        </h3>
+
+
+                        <div class="copy-row">
+
+                            <code id="hmac"
+                                  class="copy-value">E5E278AA1EE34082A088279C83F9BBC806821C52F2AB5D2B4ABD995450355114</code>
+
+                            <button class="copy-button"
+                                    type="button"
+                                    data-copy-target="hmac">
+                                Copy
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- COMPATIBILITY PACK -->
+
+                    <div class="setup-group">
+
+                        <h3 class="setup-group-title">
+                            CompPack
+                        </h3>
+
+
+                        <div class="copy-row">
+
+                            <code id="comppack"
+                                  class="copy-value">https://gitlab.com/nopaystation_repos/nps_compati_packs/raw/master/entries.txt</code>
+
+                            <button class="copy-button"
+                                    type="button"
+                                    data-copy-target="comppack">
+                                Copy
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- COMPATIBILITY PATCH -->
+
+                    <div class="setup-group">
+
+                        <h3 class="setup-group-title">
+                            CompPack Patch
+                        </h3>
+
+
+                        <div class="copy-row">
+
+                            <code id="comppack-patch"
+                                  class="copy-value">https://gitlab.com/nopaystation_repos/nps_compati_packs/raw/master/entries_patch.txt</code>
+
+                            <button class="copy-button"
+                                    type="button"
+                                    data-copy-target="comppack-patch">
+                                Copy
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </section>
+
+
+            <!-- ===============================================
+                 NOTES
+                 =============================================== -->
+
+            <section class="tutorial-section">
+
+                <h2 class="tutorial-section-heading">
+                    notes
+                </h2>
+
+                <div class="prose">
+
+                    <p>
+                        This page contains the resources used throughout
+                        the PS3 emulation tutorial.
+                    </p>
+
+                </div>
+
+            </section>
+
+
+        </div>
+
+    </main>
+
+
+    <!-- =====================================================
+         FOOTER
+         ===================================================== -->
+
+    <footer class="site-footer">
+
+        <span>
+            antmenth. &copy; 2026
+        </span>
+
+        <div class="footer-links">
+
+            <a href="https://www.youtube.com/@antmenth"
+               target="_blank"
+               rel="noopener noreferrer">
+                youtube
+            </a>
+
+            <a href="https://github.com/antmenth"
+               target="_blank"
+               rel="noopener noreferrer">
+                github
+            </a>
+
+        </div>
+
+    </footer>
+
+
+    <script src="../../script.js"></script>
+
+</body>
+</html>

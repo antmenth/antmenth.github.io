@@ -1,0 +1,14 @@
+[
+    {
+        "title": "PS3 Emulation",
+        "description": "Complete PS3 emulator setup guide, downloads and useful resources.",
+        "date": "2026-09-27",
+        "url": "./tutorials/ps3-emulation/",
+        "video": "",
+        "tags": [
+            "ps3",
+            "emulation",
+            "rpcs3"
+        ]
+    }
+]

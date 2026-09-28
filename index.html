@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="antmenth. — guides, tutorials, downloads and useful resources.">
+
+    <title>antmenth.</title>
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body data-page="home">
+
+    <!-- =====================================================
+         HEADER
+         ===================================================== -->
+
+    <header class="site-header">
+
+        <a class="brand"
+           href="./"
+           aria-label="antmenth home">
+            <span class="brand-prompt">&gt;</span>
+            <span id="brandText"></span>
+        </a>
+
+        <div class="header-status">
+            <span class="status-dot"></span>
+            <span>online</span>
+        </div>
+
+    </header>
+
+
+    <!-- =====================================================
+         MAIN
+         ===================================================== -->
+
+    <main class="site-container">
+
+        <!-- HERO -->
+
+        <section class="hero">
+
+            <h1>
+                <span id="heroBrand"></span>
+                <span class="hero-cursor"
+                      aria-hidden="true"></span>
+            </h1>
+
+            <p class="hero-copy">
+                Guides, downloads and useful resources — all in one place.
+            </p>
+
+        </section>
+
+
+        <!-- YOUTUBE -->
+
+        <section class="section">
+
+            <div class="section-heading">
+                <h2>youtube.</h2>
+            </div>
+
+            <div class="youtube-card">
+
+                <img id="youtubeAvatar"
+                     class="youtube-avatar"
+                     src="https://banner.yt/antmenth/avatar"
+                     alt="antmenth YouTube profile picture">
+
+                <div class="youtube-info">
+
+                    <div class="youtube-label">
+                        creator
+                    </div>
+
+                    <h3 id="youtubeName"
+                        class="youtube-name">
+                        antmenth.
+                    </h3>
+
+                    <div id="youtubeHandle"
+                         class="youtube-handle">
+                        @antmenth
+                    </div>
+
+                    <div id="subscriberCount"
+                         class="youtube-subs">
+                        loading subscribers...
+                    </div>
+
+                </div>
+
+                <a class="youtube-button"
+                   href="https://www.youtube.com/@antmenth"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    open channel
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- TUTORIALS -->
+
+        <section class="section">
+
+            <div class="section-heading">
+
+                <h2>tutorials.</h2>
+
+                <span id="tutorialCount"
+                      class="tutorial-count">
+                    loading...
+                </span>
+
+            </div>
+
+
+            <div class="tutorial-controls">
+
+                <div class="search-wrap">
+
+                    <input id="searchInput"
+                           class="search-input"
+                           type="search"
+                           placeholder="search tutorials..."
+                           autocomplete="off">
+
+                </div>
+
+
+                <select id="sortSelect"
+                        class="sort-select"
+                        aria-label="Sort tutorials">
+                    <option value="newest">
+                        newest → oldest
+                    </option>
+
+                    <option value="oldest">
+                        oldest → newest
+                    </option>
+
+                    <option value="az">
+                        A → Z
+                    </option>
+
+                    <option value="za">
+                        Z → A
+                    </option>
+                </select>
+
+            </div>
+
+
+            <div id="tutorialList"
+                 class="tutorial-list"></div>
+
+
+            <div id="emptyState"
+                 class="empty-state"
+                 hidden>
+                &gt; no tutorials found.
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =====================================================
+         FOOTER
+         ===================================================== -->
+
+    <footer class="site-footer">
+
+        <span>
+            antmenth. &copy; 2026
+        </span>
+
+        <div class="footer-links">
+
+            <a href="https://www.youtube.com/@antmenth"
+               target="_blank"
+               rel="noopener noreferrer">
+                youtube
+            </a>
+
+            <a href="https://github.com/antmenth"
+               target="_blank"
+               rel="noopener noreferrer">
+                github
+            </a>
+
+        </div>
+
+    </footer>
+
+
+    <script src="./script.js"></script>
+
+</body>
+</html>
